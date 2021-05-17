@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.0.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.example</groupId>
+    <artifactId>demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>myquartz</name>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <java.version>11</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-quartz</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.novemberain</groupId>-->
+<!--            <artifactId>quartz-mongodb</artifactId>-->
+<!--            <version>2.0.0-rc2</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>de.flapdoodle.embed</groupId>
+            <artifactId>de.flapdoodle.embed.mongo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.wso2.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.clojure/clojure -->
+        <dependency>
+            <groupId>org.clojure</groupId>
+            <artifactId>clojure</artifactId>
+            <version>1.7.0</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>sfo-releases</id>-->
+<!--            <name>sfo-releases</name>-->
+<!--            <url>${env.SFO_RELEASES_URL}</url>-->
+<!--        </repository>-->
+<!--        <snapshotRepository>-->
+<!--            <id>sfo-snapshots</id>-->
+<!--            <name>sfo-snapshots</name>-->
+<!--            <url>${env.SFO_SNAPSHOTS_URL}</url>-->
+<!--        </snapshotRepository>-->
+<!--    </distributionManagement>-->
+
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>sfo-snapshots-get</id>-->
+<!--            <url>${env.SFO_SNAPSHOTS_URL}</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>michaelklishin</id>-->
+<!--            <url>https://dl.bintray.com/michaelklishin/maven/</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>clojars.org</id>-->
+<!--            <url>http://clojars.org/repo</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

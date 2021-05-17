@@ -1,0 +1,12 @@
+spring:
+  quartz:
+    properties:
+      org.quartz.jobStore.class: com.example.demo.quartz.mongodb.MongoDBJobStore
+      org.quartz.jobStore.mongoUri: mongodb://localhost:27017
+      org.quartz.jobStore.dbName: SfoScheduler
+#      org.quartz.jobStore.misfireThreshold: 10000 # ������ ������� � ������������
+  data:
+    mongodb:
+      database: test
+      port: 27017
+      host: localhost
